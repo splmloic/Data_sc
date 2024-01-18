@@ -46,7 +46,7 @@ end
 
 def exo8 (journalists)
     i = 0
-    until i > 33
+    until i > journalists.count{|handle| handle.length}
         i = i + 1
         if journalists.count{ |handle| handle.length == i} == 0
             else
@@ -89,7 +89,6 @@ def perform (journalists)
  exo7 (journalists)
  pause
  exo8 (journalists)
- pause
 end
 
 perform (journalists)
